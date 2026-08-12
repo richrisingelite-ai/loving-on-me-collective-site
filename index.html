@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Loving On Me Collective — Tools for the woman choosing herself again</title>
+  <meta name="description" content="The Loving On Me Collective builds gentle, practical tools for women healing from toxic relationships, heartbreak, and burnout — starting with the free Loving On Me Daily Companion.">
+  <meta property="og:title" content="The Loving On Me Collective">
+  <meta property="og:description" content="Gentle, practical tools for the woman choosing herself again. Meet the free Loving On Me Daily Companion.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/rose-home.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Cdefs%3E%3ClinearGradient%20id='g'%20x1='0'%20y1='0'%20x2='1'%20y2='1'%3E%3Cstop%20offset='0'%20stop-color='%23AE6577'/%3E%3Cstop%20offset='1'%20stop-color='%2385404F'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle%20cx='32'%20cy='32'%20r='30'%20fill='url(%23g)'/%3E%3Cg%20transform='translate(32%2032)'%3E%3Cellipse%20cx='0'%20cy='-9'%20rx='5'%20ry='9'%20fill='%23F7E4E8'/%3E%3Cellipse%20cx='0'%20cy='-9'%20rx='5'%20ry='9'%20fill='%23F7E4E8'%20transform='rotate(72)'/%3E%3Cellipse%20cx='0'%20cy='-9'%20rx='5'%20ry='9'%20fill='%23F7E4E8'%20transform='rotate(144)'/%3E%3Cellipse%20cx='0'%20cy='-9'%20rx='5'%20ry='9'%20fill='%23F7E4E8'%20transform='rotate(216)'/%3E%3Cellipse%20cx='0'%20cy='-9'%20rx='5'%20ry='9'%20fill='%23F7E4E8'%20transform='rotate(288)'/%3E%3Ccircle%20r='4'%20fill='%23C79A62'/%3E%3C/g%3E%3C/svg%3E">
+  <style>
+    :root{
+      --porcelain:#FAF6F5; --card:#FFFFFF; --soft:#FDF4F5;
+      --blush:#F7E4E8; --blush-border:#EFD3D9; --rose-border:#EACDD5;
+      --rose:#9E5162; --rose-deep:#85404F; --rose-mid:#AE6577;
+      --gold:#C79A62; --gold-deep:#8A6636;
+      --plum:#332328; --plum-soft:#5E464C; --plum-faint:#87686F;
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{background:var(--porcelain);color:var(--plum);font-family:"Nunito Sans",system-ui,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+    h1,h2,h3,.display{font-family:"Playfair Display",Georgia,serif;font-weight:600;line-height:1.2}
+    img{max-width:100%;display:block}
+    a{color:var(--rose);}
+    .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+    .eyebrow{font-size:12px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-deep)}
+    .btn{display:inline-flex;align-items:center;gap:8px;border:none;cursor:pointer;border-radius:999px;padding:14px 28px;font:800 15px "Nunito Sans",sans-serif;text-decoration:none;transition:all .2s}
+    .btn-primary{background:var(--rose);color:#fff}
+    .btn-primary:hover{background:var(--rose-deep)}
+    .btn-soft{background:var(--blush);color:var(--rose-deep);border:1px solid var(--rose-border)}
+    .btn-soft:hover{background:var(--blush-border)}
+    .card{background:var(--card);border:1px solid rgba(239,211,217,.8);border-radius:20px;box-shadow:0 2px 18px rgba(158,81,98,.08)}
+
+    /* Nav */
+    nav{position:sticky;top:0;z-index:50;background:rgba(250,246,245,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(239,211,217,.7)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;max-width:1080px;margin:0 auto}
+    .brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+    .brand-name{font-family:"Playfair Display",serif;font-size:17px;font-weight:600;color:var(--plum)}
+    .brand-sub{font-size:9px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-deep)}
+    .nav-links{display:flex;gap:22px;align-items:center}
+    .nav-links a{font-size:14px;font-weight:700;color:var(--plum-soft);text-decoration:none}
+    .nav-links a:hover{color:var(--rose)}
+    .nav-links .btn{padding:10px 20px;font-size:13px}
+    @media(max-width:760px){.nav-links a:not(.btn){display:none}}
+
+    /* Hero */
+    .hero{padding:72px 0 56px}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+    @media(max-width:860px){.hero-grid{grid-template-columns:1fr}}
+    .hero h1{font-size:clamp(34px,4.6vw,52px);margin:14px 0 18px}
+    .hero h1 em{font-style:italic;color:var(--rose)}
+    .hero p.lead{font-size:19px;color:var(--plum-soft);max-width:34em}
+    .hero-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .hero video{width:100%;border-radius:20px;box-shadow:0 18px 50px rgba(158,81,98,.22);border:1px solid var(--rose-border)}
+    .hero-note{margin-top:10px;font-size:13px;color:var(--plum-faint);text-align:center}
+
+    section{padding:72px 0}
+    .sec-head{max-width:640px;margin-bottom:40px}
+    .sec-head h2{font-size:clamp(28px,3.4vw,38px);margin:12px 0 12px}
+    .sec-head p{color:var(--plum-soft);font-size:17px}
+
+    /* Companion */
+    #app{background:var(--soft);border-top:1px solid rgba(239,211,217,.6);border-bottom:1px solid rgba(239,211,217,.6)}
+    .app-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+    @media(max-width:860px){.app-grid{grid-template-columns:1fr}}
+    .shot{border-radius:18px;border:1px solid var(--rose-border);box-shadow:0 14px 40px rgba(158,81,98,.16)}
+    .features{list-style:none;display:grid;gap:14px;margin-top:22px}
+    .features li{display:flex;gap:12px;align-items:flex-start;font-size:15.5px;color:var(--plum-soft)}
+    .features li b{color:var(--plum)}
+    .tick{flex-shrink:0;width:22px;height:22px;border-radius:50%;background:var(--blush);color:var(--rose-deep);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;margin-top:2px}
+    .free-badge{display:inline-block;background:var(--gold);color:#fff;border-radius:999px;padding:6px 14px;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px}
+
+    /* Email capture */
+    .capture{margin-top:30px;padding:26px}
+    .capture h3{font-size:20px;margin-bottom:6px}
+    .capture p{font-size:14px;color:var(--plum-soft);margin-bottom:16px}
+    .capture form{display:flex;gap:10px;flex-wrap:wrap}
+    .capture input[type=email]{flex:1;min-width:220px;padding:14px 16px;border-radius:999px;border:1px solid var(--rose-border);background:#fff;font:600 15px "Nunito Sans";color:var(--plum)}
+    .capture input[type=email]:focus{outline:2px solid var(--gold);border-color:var(--rose-mid)}
+    .fine{font-size:12px;color:var(--plum-faint);margin-top:10px}
+
+    /* Healing plan */
+    .healing-card{display:grid;grid-template-columns:1.2fr .8fr;gap:0;overflow:hidden}
+    @media(max-width:860px){.healing-card{grid-template-columns:1fr}}
+    .healing-left{padding:44px}
+    .healing-right{background:linear-gradient(135deg,var(--rose-mid),var(--rose-deep));padding:44px;color:#fff;display:flex;flex-direction:column;justify-content:center}
+    .healing-right .display{font-size:26px;color:#fff;margin-bottom:12px}
+    .healing-right p{color:var(--blush);font-size:15px}
+    .soon-badge{display:inline-block;background:var(--blush);color:var(--rose-deep);border-radius:999px;padding:6px 14px;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px}
+    .seasons{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}
+    .season-chip{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);color:#fff;border-radius:999px;padding:5px 14px;font-size:12.5px;font-weight:700}
+
+    /* Tools */
+    .tools-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    @media(max-width:860px){.tools-grid{grid-template-columns:1fr}}
+    .tool{padding:30px;display:flex;flex-direction:column}
+    .tool .icon{width:46px;height:46px;border-radius:14px;background:linear-gradient(135deg,var(--blush),var(--rose-border));display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:16px}
+    .tool h3{font-size:20px;margin-bottom:8px}
+    .tool p{font-size:14.5px;color:var(--plum-soft);flex:1}
+    .tool .price{font-weight:800;color:var(--gold-deep);font-size:13px;letter-spacing:.06em;text-transform:uppercase;margin:14px 0 12px}
+    .tool .btn{justify-content:center}
+
+    /* About */
+    #about .card{padding:44px;display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:start}
+    @media(max-width:700px){#about .card{grid-template-columns:1fr}}
+    .about-mark{width:74px;height:74px;border-radius:50%;background:linear-gradient(135deg,var(--rose-mid),var(--rose-deep));display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    #about p{color:var(--plum-soft);font-size:16px;margin-bottom:12px}
+    #about .sig{font-family:"Playfair Display",serif;font-style:italic;font-size:19px;color:var(--rose-deep)}
+
+    /* FAQ */
+    .faq{max-width:760px}
+    .faq details{background:var(--card);border:1px solid rgba(239,211,217,.8);border-radius:16px;padding:20px 24px;margin-bottom:12px}
+    .faq summary{font-weight:800;font-size:15.5px;cursor:pointer;color:var(--plum)}
+    .faq details p{margin-top:10px;font-size:14.5px;color:var(--plum-soft)}
+
+    footer{background:#fff;border-top:1px solid rgba(239,211,217,.7);padding:44px 0;text-align:center}
+    footer .quote{font-family:"Playfair Display",serif;font-size:19px;color:var(--plum);margin-bottom:18px}
+    footer .disclaimer{max-width:640px;margin:0 auto 14px;font-size:12px;color:var(--plum-faint)}
+    footer .tiny{font-size:12px;color:var(--plum-faint)}
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="brand" href="#top">
+      <svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="ng" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#AE6577"/><stop offset="1" stop-color="#85404F"/></linearGradient></defs><circle cx="32" cy="32" r="30" fill="url(#ng)"/><g transform="translate(32 32)"><ellipse cx="0" cy="-9" rx="5" ry="9" fill="#F7E4E8"/><ellipse cx="0" cy="-9" rx="5" ry="9" fill="#F7E4E8" transform="rotate(72)"/><ellipse cx="0" cy="-9" rx="5" ry="9" fill="#F7E4E8" transform="rotate(144)"/><ellipse cx="0" cy="-9" rx="5" ry="9" fill="#F7E4E8" transform="rotate(216)"/><ellipse cx="0" cy="-9" rx="5" ry="9" fill="#F7E4E8" transform="rotate(288)"/><circle r="4" fill="#C79A62"/></g></svg>
+      <span>
+        <span class="brand-name">The Loving On Me Collective</span><br>
+        <span class="brand-sub">Choose yourself again</span>
+      </span>
+    </a>
+    <div class="nav-links">
+      <a href="#app">The App</a>
+      <a href="#healing">Healing Plan</a>
+      <a href="#tools">Tools</a>
+      <a href="#about">About</a>
+      <a href="#app" class="btn btn-primary">Get the free app</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">For the woman starting again</span>
+      <h1>You are not starting over. You are starting again — <em>with experience.</em></h1>
+      <p class="lead">The Loving On Me Collective builds gentle, practical tools for women healing from toxic relationships, heartbreak, and burnout — and learning to stop abandoning themselves.</p>
+      <div class="hero-ctas">
+        <a href="#app" class="btn btn-primary">Meet the free Daily Companion</a>
+        <a href="#tools" class="btn btn-soft">See the tools</a>
+      </div>
+    </div>
+    <div>
+      <video src="/assets/demo.mp4" controls playsinline preload="metadata" aria-label="Loving On Me Daily Companion demo video"></video>
+      <p class="hero-note">90 seconds inside the Daily Companion</p>
+    </div>
+  </div>
+</header>
+
+<!-- COMPANION -->
+<section id="app">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">The flagship — free</span>
+      <h2>The Loving On Me Daily Companion</h2>
+      <p>A safe, uplifting big-sister space that meets you exactly where you are today — and never charges you to be held.</p>
+    </div>
+    <div class="app-grid">
+      <div>
+        <img class="shot" src="/assets/rose-home.png" alt="The Daily Companion home screen with a mood check-in and daily encouragement" loading="lazy">
+      </div>
+      <div>
+        <span class="free-badge">100% free</span>
+        <ul class="features">
+          <li><span class="tick">✓</span><span><b>Daily Check-In</b> — name your mood, get met with words that actually fit it, and build a streak of showing up for yourself</span></li>
+          <li><span class="tick">✓</span><span><b>A personalized plan every day</b> — an encouragement, a journal prompt, one small action, a pocket hug, and an affirmation matched to how you feel</span></li>
+          <li><span class="tick">✓</span><span><b>The Red Flag Decoder</b> — a 47-pattern library plus a private "help me understand this" tool for the moments that leave you confused</span></li>
+          <li><span class="tick">✓</span><span><b>Boundary Builder, Pocket Hugs & a Healing Journey</b> — five seasons, weekly gentle practices, and a letter from Future You</span></li>
+          <li><span class="tick">✓</span><span><b>Completely private</b> — everything you write stays on your own device. No account. No cloud. Nobody reads it but you.</span></li>
+        </ul>
+        <div class="card capture">
+          <h3>Be first in when the doors open</h3>
+          <p>The Companion opens to everyone this Monday. Join the list and the link lands in your inbox the moment it's live — plus gentle notes from the Collective (no spam, ever).</p>
+          <form name="launch-list" method="POST" data-netlify="true" action="/thanks.html">
+            <input type="hidden" name="form-name" value="launch-list">
+            <input type="hidden" name="interest" value="daily-companion">
+            <input type="email" name="email" required placeholder="Your best email, beautiful">
+            <button type="submit" class="btn btn-primary">Save my spot</button>
+          </form>
+          <p class="fine">One email when it opens. Unsubscribe anytime.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HEALING PLAN -->
+<section id="healing">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Coming next from the Collective</span>
+      <h2>The Loving On Me Healing Plan</h2>
+      <p>Two quiet minutes. Seven gentle questions. A plan that fits the season you're actually in.</p>
+    </div>
+    <div class="card healing-card">
+      <div class="healing-left">
+        <span class="soon-badge">Coming soon</span>
+        <p style="color:var(--plum-soft);font-size:16px;margin-bottom:14px">A free emotional check-in that tells you which healing season you're in — then walks with you through it. No quiz-show energy. No judgment. Just clarity about where you are and what this season is asking of you.</p>
+        <p style="color:var(--plum-soft);font-size:16px;margin-bottom:8px">When it launches, each season comes with an optional <b>7-Day Healing Reset</b> — one week of small, doable steps, for less than the cost of lunch.</p>
+        <div class="card capture" style="margin-top:22px">
+          <h3>Want the Healing Plan first?</h3>
+          <p>Join the early list — you'll get it before anyone else.</p>
+          <form name="healing-list" method="POST" data-netlify="true" action="/thanks.html">
+            <input type="hidden" name="form-name" value="healing-list">
+            <input type="email" name="email" required placeholder="Your email">
+            <button type="submit" class="btn btn-primary">Put me first in line</button>
+          </form>
+        </div>
+      </div>
+      <div class="healing-right">
+        <span class="display">Which season are you in?</span>
+        <div class="seasons">
+          <span class="season-chip">Surviving</span>
+          <span class="season-chip">Rebuilding</span>
+          <span class="season-chip">Reclaiming</span>
+          <span class="season-chip">Becoming</span>
+        </div>
+        <p>Healing has seasons, not deadlines. The Healing Plan helps you name yours — because the right next step depends on where you're standing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section id="tools" style="background:var(--soft);border-top:1px solid rgba(239,211,217,.6);border-bottom:1px solid rgba(239,211,217,.6)">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Rebuild your income, gently</span>
+      <h2>Tools for the woman building her own thing</h2>
+      <p>Healing your heart and rebuilding your life often happen at the same time. These simple tools help you start something of your own — without the overwhelm.</p>
+    </div>
+    <div class="tools-grid">
+      <div class="card tool">
+        <div class="icon">🧭</div>
+        <h3>AI Income Method Finder</h3>
+        <p>Not sure where to even begin? Answer a few honest questions about your time, skills, and energy — and get pointed to the online income method that actually fits your life right now.</p>
+        <div class="price">One-time purchase</div>
+        <a class="btn btn-primary" href="#" data-gumroad="method-finder">Get it on Gumroad</a>
+      </div>
+      <div class="card tool">
+        <div class="icon">🗓️</div>
+        <h3>30-Day Content Planner</h3>
+        <p>A full month of content, planned in one sitting. Prompts, structure, and a calendar that keeps you consistent — even on the days motivation doesn't show up.</p>
+        <div class="price">One-time purchase</div>
+        <a class="btn btn-primary" href="#" data-gumroad="content-planner">Get it on Gumroad</a>
+      </div>
+      <div class="card tool">
+        <div class="icon">🏷️</div>
+        <h3>Digital Product Pricing Calculator</h3>
+        <p>Stop guessing what to charge. Enter what you're making and who it's for, and get a grounded price range — so you never undervalue your work again.</p>
+        <div class="price">One-time purchase</div>
+        <a class="btn btn-primary" href="#" data-gumroad="pricing-calculator">Get it on Gumroad</a>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:22px;font-size:13.5px;color:var(--plum-faint)">Instant download · Works in any browser · Yours forever</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Who's behind this</span>
+      <h2>From one woman rebuilding to another</h2>
+    </div>
+    <div class="card">
+      <div class="about-mark">
+        <svg width="38" height="38" viewBox="0 0 64 64" aria-hidden="true"><g transform="translate(32 32)"><ellipse cx="0" cy="-9" rx="5" ry="9" fill="#F7E4E8"/><ellipse cx="0" cy="-9" rx="5" ry="9" fill="#F7E4E8" transform="rotate(72)"/><ellipse cx="0" cy="-9" rx="5" ry="9" fill="#F7E4E8" transform="rotate(144)"/><ellipse cx="0" cy="-9" rx="5" ry="9" fill="#F7E4E8" transform="rotate(216)"/><ellipse cx="0" cy="-9" rx="5" ry="9" fill="#F7E4E8" transform="rotate(288)"/><circle r="4" fill="#C79A62"/></g></svg>
+      </div>
+      <div>
+        <p>The Loving On Me Collective exists because healing shouldn't require figuring everything out alone — and because the women doing the brave work of choosing themselves again deserve tools that feel like a big sister, not a clinic.</p>
+        <p>Everything here is built gently, priced honestly, and designed to leave you feeling more hopeful than when you arrived. The Daily Companion is free because encouragement should never have a paywall. The tools exist because rebuilding your own life — and your own income — go hand in hand.</p>
+        <p>You are not difficult to love. You were asking the wrong people to love you correctly.</p>
+        <p class="sig">— The Loving On Me Collective</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Questions, answered honestly</span>
+      <h2>Before you ask</h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Is the Daily Companion really free?</summary>
+        <p>Really free. No trial, no card, no locked features. It's the heart of the Collective, and encouragement shouldn't cost anything.</p>
+      </details>
+      <details>
+        <summary>Is my journal private?</summary>
+        <p>Completely. Everything you write in the Daily Companion is saved only on your own device — there's no account and no server. We couldn't read it if we wanted to, and we don't want to.</p>
+      </details>
+      <details>
+        <summary>Is this therapy?</summary>
+        <p>No — and we'll never pretend it is. The Collective's tools offer encouragement and educational support. They're not a replacement for professional mental health, medical, legal, or emergency services. If you're in crisis or danger, please reach out to local emergency services or a licensed professional.</p>
+      </details>
+      <details>
+        <summary>How do the paid tools arrive?</summary>
+        <p>Instantly, through Gumroad. Each tool is a single file that opens in any browser — computer, tablet, or phone. Buy once, keep forever.</p>
+      </details>
+      <details>
+        <summary>When does the Healing Plan launch?</summary>
+        <p>Soon — it's in final polish now. Join its list above and you'll be the very first to know.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="quote">"Today, I promise not to abandon myself just to keep someone else comfortable."</p>
+    <p class="disclaimer">The Loving On Me Collective provides encouragement and educational support. It is not a replacement for professional mental health, medical, legal, or emergency services.</p>
+    <p class="tiny">© 2026 The Loving On Me Collective · All rights reserved</p>
+  </div>
+</footer>
+
+</body>
+</html>
