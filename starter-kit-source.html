@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- Source for assets/Choose-Yourself-Again-Starter-Kit.pdf — render with:
+     playwright page.pdf({format:'Letter', printBackground:true}) -->
+<style>
+  @page { size: letter; margin: 0; }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:"Nunito Sans",-apple-system,sans-serif;color:#332328;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .page{width:8.5in;height:11in;padding:.85in .9in;position:relative;page-break-after:always;background:#FAF6F5;overflow:hidden}
+  .page:last-child{page-break-after:auto}
+  h1,h2,h3,.serif{font-family:Georgia,"Times New Roman",serif;font-weight:600;line-height:1.25}
+  .eyebrow{font-size:10px;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:#8A6636;margin-bottom:10px}
+  .rose{color:#9E5162}
+  p{line-height:1.6}
+  .footer{position:absolute;bottom:.55in;left:.9in;right:.9in;display:flex;justify-content:space-between;font-size:9px;color:#87686F;border-top:1px solid #EFD3D9;padding-top:8px}
+
+  .cover{background:linear-gradient(150deg,#AE6577,#85404F);color:#fff;display:flex;flex-direction:column;justify-content:center;text-align:center}
+  .cover .eyebrow{color:#F0DCC4}
+  .cover h1{font-size:44px;color:#fff;margin:18px 0 14px;font-style:italic}
+  .cover .sub{font-size:16px;color:#F7E4E8;max-width:5.4in;margin:0 auto;line-height:1.7}
+  .cover .mark{width:86px;height:86px;border-radius:50%;background:rgba(255,255,255,.12);border:1.5px solid rgba(240,220,196,.5);display:flex;align-items:center;justify-content:center;margin:0 auto 8px}
+  .cover .from{margin-top:44px;font-size:11px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:#F0DCC4}
+
+  .intro-quote{background:#fff;border-left:4px solid #C79A62;border-radius:12px;padding:18px 22px;font-family:Georgia,serif;font-size:16px;font-style:italic;color:#48343A;margin:22px 0}
+  h2.section{font-size:27px;margin-bottom:6px}
+  .lede{color:#5E464C;font-size:13.5px;margin-bottom:22px}
+
+  .item{background:#fff;border:1px solid #EFD3D9;border-radius:14px;padding:16px 20px;margin-bottom:12px}
+  .item h3{font-size:15px;color:#332328;margin-bottom:5px}
+  .item p{font-size:12px;color:#5E464C}
+  .item .tag{font-size:9px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#8A6636}
+  .reminder{font-size:11.5px;color:#85404F;font-weight:700;margin-top:6px}
+
+  .hug{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid #EFD3D9;border-radius:14px;padding:14px 18px;margin-bottom:10px}
+  .hug .day{flex-shrink:0;width:64px;font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#8A6636;padding-top:3px}
+  .hug p{font-size:12px;color:#48343A}
+
+  .promise{background:linear-gradient(135deg,#AE6577,#85404F);border-radius:16px;color:#fff;padding:28px 30px;text-align:center;margin-top:18px}
+  .promise .serif{font-size:20px;font-style:italic;color:#fff;line-height:1.5}
+  .promise .small{margin-top:10px;font-size:11px;color:#F0DCC4;font-weight:700;letter-spacing:.06em}
+
+  .next{background:#fff;border:1px solid #EFD3D9;border-radius:14px;padding:20px 24px;margin-bottom:14px}
+  .next h3{font-size:16px;margin-bottom:4px}
+  .next p{font-size:12px;color:#5E464C}
+  .next .price{font-size:11px;font-weight:800;color:#8A6636;letter-spacing:.1em;text-transform:uppercase;margin-top:6px}
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="page cover">
+  <div>
+    <div class="mark"><svg width="44" height="44" viewBox="0 0 64 64"><g transform="translate(32 32)"><ellipse cx="0" cy="-9" rx="5" ry="9" fill="#F7E4E8"/><ellipse cx="0" cy="-9" rx="5" ry="9" fill="#F7E4E8" transform="rotate(72)"/><ellipse cx="0" cy="-9" rx="5" ry="9" fill="#F7E4E8" transform="rotate(144)"/><ellipse cx="0" cy="-9" rx="5" ry="9" fill="#F7E4E8" transform="rotate(216)"/><ellipse cx="0" cy="-9" rx="5" ry="9" fill="#F7E4E8" transform="rotate(288)"/><circle r="4" fill="#C79A62"/></g></svg></div>
+    <div class="eyebrow">A gift, not a lecture</div>
+    <h1>Choose Yourself Again</h1>
+    <p class="sub">The starter kit: five boundaries you're allowed to have, five red flags finally decoded, and seven pocket hugs for the hard moments.</p>
+    <div class="from">The Loving On Me Collective</div>
+  </div>
+</div>
+
+<!-- WELCOME + PROMISE -->
+<div class="page">
+  <div class="eyebrow">Before anything else</div>
+  <h2 class="section">Hey beautiful.</h2>
+  <p style="font-size:13.5px;color:#48343A;margin-top:10px">If this landed in your hands, some part of you is done abandoning herself to keep other people comfortable. That part of you is the one we're talking to — the one who's healing from a relationship that hurt, a season that drained her, or a pattern she's finally ready to name.</p>
+  <p style="font-size:13.5px;color:#48343A;margin-top:10px">This little kit isn't homework. Read it in five minutes or keep it on your phone for the hard nights. Either way, it works the same: by reminding you of what you already know.</p>
+  <div class="intro-quote">"You are not difficult to love. You were asking the wrong people to love you correctly."</div>
+  <div class="promise">
+    <p class="serif">"Today, I promise not to abandon myself just to keep someone else comfortable."</p>
+    <p class="small">THE DAILY PROMISE — SAY IT ONCE, OUT LOUD, EVERY MORNING</p>
+  </div>
+  <p style="font-size:12px;color:#87686F;margin-top:18px">Three more words for your pocket: <b style="color:#5E464C">Consistency is the minimum, not a reward you have to earn.</b> · <b style="color:#5E464C">Closure is not something they give you. It is something you decide.</b> · <b style="color:#5E464C">You are not starting over. You are starting again with experience.</b></p>
+  <div class="footer"><span>The Loving On Me Collective</span><span>Choose Yourself Again · 1</span></div>
+</div>
+
+<!-- BOUNDARIES -->
+<div class="page">
+  <div class="eyebrow">Part one</div>
+  <h2 class="section">Five boundaries you're allowed to have</h2>
+  <p class="lede">A boundary is not a punishment for them. It's a promise to you. Borrow these word-for-word until your own come naturally.</p>
+  <div class="item"><span class="tag">With an ex</span><h3>"If they text me, I will wait 24 hours and check my reasons before replying — if I reply at all."</h3><p>Re-entry into your life should require repair, not just reappearance.</p></div>
+  <div class="item"><span class="tag">With family</span><h3>"I can love my family and still leave the room when the conversation turns disrespectful."</h3><p>Love and limits are allowed to exist in the same sentence.</p></div>
+  <div class="item"><span class="tag">With friends</span><h3>"I will not be the only one reaching out. Effort has to flow both ways."</h3><p>You are allowed to notice who only calls when they need something.</p></div>
+  <div class="item"><span class="tag">At work</span><h3>"I will take my breaks and my time off without apologizing for them."</h3><p>Rest is part of the job of being a person.</p></div>
+  <div class="item"><span class="tag">With yourself</span><h3>"I will not talk to myself in a tone I would never use with someone I love."</h3><p>The longest relationship of your life deserves your kindest voice.</p></div>
+  <div class="footer"><span>The Loving On Me Collective</span><span>Choose Yourself Again · 2</span></div>
+</div>
+
+<!-- RED FLAGS -->
+<div class="page">
+  <div class="eyebrow">Part two</div>
+  <h2 class="section">Five red flags, finally decoded</h2>
+  <p class="lede">These are common patterns, not diagnoses of any one person. Only you know the full context of your situation — but naming a pattern is how it stops confusing you.</p>
+  <div class="item"><h3>Love bombing</h3><p>Intense attention, constant messages, and soulmate talk very early — before they truly know you.</p><p class="reminder">Real love can afford to move slowly. Rushing is a signal, not a romance.</p></div>
+  <div class="item"><h3>Hot and cold</h3><p>All-in one week, distant the next. The unpredictability keeps you anxious and grateful for crumbs.</p><p class="reminder">Consistency is the minimum, not a reward you have to earn.</p></div>
+  <div class="item"><h3>Gaslighting</h3><p>"That never happened." "You're imagining things." Your memory becomes the thing on trial.</p><p class="reminder">Your perception is allowed to exist even when it is inconvenient for someone else.</p></div>
+  <div class="item"><h3>The non-apology</h3><p>"I'm sorry you feel that way." Apologies that protect their image and reassign the fault to you.</p><p class="reminder">Repair sounds like changed behavior, not rehearsed words.</p></div>
+  <div class="item"><h3>Guilt trips</h3><p>"After all I've done for you." Your no gets punished instead of respected.</p><p class="reminder">Guilt is not proof you did something wrong. Sometimes it is proof you did something new.</p></div>
+  <div class="footer"><span>The Loving On Me Collective</span><span>Choose Yourself Again · 3</span></div>
+</div>
+
+<!-- POCKET HUGS -->
+<div class="page">
+  <div class="eyebrow">Part three</div>
+  <h2 class="section">Seven pocket hugs — one for each day</h2>
+  <p class="lede">Small warm notes for heavy moments. Read the day's hug like it was written for you, because it was.</p>
+  <div class="hug"><span class="day">Monday</span><p>You made it through today. That is not nothing. That is everything.</p></div>
+  <div class="hug"><span class="day">Tuesday</span><p>Deep breath. Shoulders down. Unclench your jaw. You are safe in this moment.</p></div>
+  <div class="hug"><span class="day">Wednesday</span><p>You are allowed to take up space, sis. All of it.</p></div>
+  <div class="hug"><span class="day">Thursday</span><p>The right people will not make you beg. Rest until they arrive.</p></div>
+  <div class="hug"><span class="day">Friday</span><p>Your softness survived. After everything, it survived. Protect it.</p></div>
+  <div class="hug"><span class="day">Saturday</span><p>You do not have to earn rest. You are a person, not a performance.</p></div>
+  <div class="hug"><span class="day">Sunday</span><p>The little girl you used to be is proud of the woman reading this.</p></div>
+  <div class="footer"><span>The Loving On Me Collective</span><span>Choose Yourself Again · 4</span></div>
+</div>
+
+<!-- WHAT'S NEXT -->
+<div class="page">
+  <div class="eyebrow">When you want more than a page</div>
+  <h2 class="section">The Collective walks with you</h2>
+  <p class="lede">This kit is a taste of two bigger companions, built with the same heart:</p>
+  <div class="next"><h3>The Loving On Me Daily Companion</h3><p>Your private daily space: mood check-ins that answer back, a personalized plan every day, the full 47-pattern Red Flag Decoder, a boundary builder, pocket hugs on demand, and a healing journey with seasons. Everything stays on your device — nobody reads it but you.</p><p class="price">$17 · one-time · available now</p></div>
+  <div class="next"><h3>The Loving On Me Healing Plan</h3><p>Seven gentle questions reveal which healing season you're in — then the 7-Day Healing Reset walks you through one week of small, doable steps that fit exactly where you are.</p><p class="price">$9 · coming soon</p></div>
+  <p style="font-size:12.5px;color:#5E464C;margin-top:16px">The Daily Companion is ready for you right now at <b class="rose">The Loving On Me Collective</b> — the link that brought you this kit. The Healing Plan is next, and you'll be among the first to know.</p>
+  <p style="font-size:10px;color:#87686F;margin-top:26px;line-height:1.6">The Loving On Me Collective provides encouragement and educational support. It is not a replacement for professional mental health, medical, legal, or emergency services. If you are in crisis or in danger, please reach out to local emergency services or a licensed professional.</p>
+  <div class="footer"><span>© 2026 The Loving On Me Collective</span><span>Choose Yourself Again · 5</span></div>
+</div>
+
+</body>
+</html>
