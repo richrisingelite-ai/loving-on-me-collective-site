@@ -37,8 +37,8 @@
     html{scroll-behavior:smooth}
     body{background:var(--page);color:var(--text);font-family:"Montserrat",system-ui,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
     /* Full-page photographic backdrop: pinned layer (behaves like background-attachment:fixed, no iOS jitter) */
-    body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(180deg,rgba(10,2,8,.50) 0%,rgba(10,2,8,.60) 100%),url("assets/hero-bg.jpg") 85% bottom/cover no-repeat,#121013}
-    @media(max-width:860px){body::before{background-position:center,95% bottom,center}}
+    body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(180deg,rgba(10,2,8,.32) 0%,rgba(10,2,8,.40) 55%,rgba(10,2,8,.60) 100%),url("assets/hero-bg.jpg") 85% 70%/cover no-repeat,#121013}
+    @media(max-width:860px){body::before{background-position:center,95% 70%,center}}
     /* Dark panel behind loose text so every word stays crisp on the photo */
     .sec-head,#app .app-grid > div:last-child,#tools .wrap > div:last-child{background:rgba(18,16,19,.82);border-radius:20px;padding:24px 28px}
     #tools .wrap > div:last-child{width:fit-content;margin-left:auto;margin-right:auto;padding:20px 28px}
@@ -71,6 +71,7 @@
     .hero{padding:72px 0 56px;min-height:92vh;display:flex;align-items:center}
     .hero > .wrap{width:100%}
     .hero .eyebrow,.hero h1,.hero p.lead{text-shadow:0 1px 2px rgba(0,0,0,.85),0 2px 18px rgba(0,0,0,.75)}
+    .hero p.lead{background:rgba(10,2,8,.40);box-shadow:0 0 28px 18px rgba(10,2,8,.40);border-radius:14px}
     @media(max-width:860px){.hero{min-height:0;display:block}}
     .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
     @media(max-width:860px){.hero-grid{grid-template-columns:1fr}}
