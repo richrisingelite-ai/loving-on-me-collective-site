@@ -69,8 +69,8 @@
     .hero h1 em{font-family:"Allura",cursive;font-style:normal;font-size:1.15em;letter-spacing:0;color:var(--pink-soft)}
     .hero p.lead{font-size:18px;color:var(--text-soft);max-width:34em}
     .hero-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-    .hero-phone{width:100%;max-width:300px;height:auto;margin:0 auto;border-radius:36px;border:6px solid #2E2830;box-shadow:0 0 0 1px rgba(246,13,101,.35),0 18px 60px rgba(246,13,101,.22)}
-    @media(max-width:860px){.hero-phone{max-width:260px}}
+    .hero video{display:block;width:100%;max-width:300px;height:auto;aspect-ratio:1170/2532;object-fit:cover;background:#121013;margin:0 auto;border-radius:36px;border:6px solid #2E2830;box-shadow:0 0 0 1px rgba(246,13,101,.35),0 18px 60px rgba(246,13,101,.22)}
+    @media(max-width:860px){.hero video{max-width:260px}}
 
     section{padding:72px 0}
     .sec-head{max-width:640px;margin-bottom:40px}
@@ -175,7 +175,7 @@
       </div>
     </div>
     <div>
-      <img class="hero-phone" src="assets/app-home-dark-mobile.png" alt="The Daily Companion on a phone — dark theme home screen with a crown, a daily check-in, and the words Come back to yourself" width="1170" height="2532">
+      <video src="assets/demo-dark.mp4" poster="assets/app-home-dark-mobile.png" controls playsinline preload="none" aria-label="Loving On Me Daily Companion demo video"></video>
     </div>
   </div>
 </header>
